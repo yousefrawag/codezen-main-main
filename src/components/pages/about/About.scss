@@ -1,0 +1,242 @@
+@import "../../variables/variables.scss";
+.about {
+  text-align: center;
+  padding: $padding_80;
+  .about-up {
+    .text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+
+      h2 {
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      p {
+        text-transform: capitalize;
+        line-height: 1.8;
+        color: $color_3;
+        font-size: $font_16;
+        margin: 10px 0;
+        color: $color_3;
+      }
+    }
+  }
+  .about-center {
+    padding: $padding_80;
+    .title-text-up {
+      margin-bottom: 100px;
+      text-transform: capitalize;
+      h2 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 18px;
+        max-width: 80%;
+        margin: 15px auto;
+        color: $color_3;
+      }
+    }
+    .about-center-content {
+      margin-bottom: 25px;
+      transition: $tran_3;
+      position: relative;
+      padding: 85px 35px 40px;
+      border-radius: $border_radius;
+      &:hover {
+        box-shadow: 8px 8px 30px 0 rgba(39, 56, 87, 0.15);
+      }
+      .number-box {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 900;
+        font-family: "Red Hat Display", sans-serif;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: -35px;
+        margin-left: -35px;
+        margin-bottom: 45px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        box-shadow: 10px 10px 30px 0px rgba(255, 196, 0, 0.3);
+        -webkit-box-shadow: 10px 10px 30px 0px rgba(255, 196, 0, 0.3);
+        background-color: $color_1;
+        background-image: linear-gradient(145deg, $color_1, $color_2);
+      }
+      .img-box {
+        img {
+          width: 180px;
+          margin-bottom: 20px;
+        }
+      }
+      .text-box {
+        text-transform: capitalize;
+        h3 {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+  .meber {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    .member_rapper {
+      padding-top: 40px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px;
+
+      .card {
+        position: relative;
+        width: 90%;
+        margin-bottom: 4rem;
+        height: 367px;
+        padding: 0px 12px;
+        border-radius: 14px;
+        z-index: 1111;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        box-shadow: 1px 7px 9px -2px rgba(0, 0, 0, 0.69);
+        -webkit-box-shadow: 1px 7px 9px -2px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 1px 7px 9px -2px rgba(0, 0, 0, 0.69);
+        margin: 0 auto 4rem;
+        .bg {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 98%;
+          height: 357px;
+          z-index: 2;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(24px);
+          border-radius: 10px;
+          overflow: hidden;
+          padding-top: 20px;
+          .link_to_member {
+            background-color: transparent;
+            border: transparent;
+            outline: transparent;
+            color: #161c26;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .hr {
+            width: 100%;
+            margin-top: 22px;
+            margin-bottom: 12px;
+            color: #555;
+            height: 4px;
+          }
+          h5 {
+            color: #161c26;
+            margin-top: 6px;
+            text-align: center;
+            text-transform: capitalize;
+          }
+          p {
+            color: #161c26;
+            margin-bottom: 6px;
+            margin-top: 9px;
+            text-align: center;
+            text-transform: capitalize;
+          }
+          .subtitle {
+            text-transform: lowercase;
+            color: #555;
+            margin-top: 20px;
+            font-size: 15px;
+            width: 98%;
+          }
+
+          .image {
+            width: 110px;
+            height: 110px;
+            margin: auto;
+            border-radius: 50%;
+            border: solid 4px #eee;
+            .img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .blob {
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          width: 60%;
+          height: 200px;
+          border-radius: 50%;
+          background-color: #f7723e;
+          opacity: 1;
+          filter: blur(12px);
+          animation: blob-bounce 5s infinite ease;
+
+          @keyframes blob-bounce {
+            0% {
+              transform: translate(-100%, -100%) translate3d(0, 0, 0);
+            }
+
+            25% {
+              transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+            }
+
+            50% {
+              transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+            }
+
+            75% {
+              transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+            }
+
+            100% {
+              transform: translate(-100%, -100%) translate3d(0, 0, 0);
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #161c26;
+    }
+  }
+  .content-center {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
